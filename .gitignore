@@ -1,0 +1,38 @@
+arkrc
+vesktop/sessionData/*
+vesktop/*
+Vencord/*
+Code/Cache/*
+Code/*
+Code - Insiders/Cache/*
+Code - Insiders/CachedData/*
+Code - Insiders/*
+discord/Cache/*
+discord/*
+obs-studio/*
+JetBrains/*
+cosmic/*
+Blockbench/*
+Recaf/*
+jd-gui.cfg
+kconf_updaterc
+QtProject.conf
+trashrc
+autostart/premid.desktop
+btop/btop.log
+dconf/user
+cef_user_data/Dictionaries/en-US-9-0.bdic
+discordo/config.yml
+discover_overlay/discover_overlay.rpc
+enigma/enigmaswingrc
+enigma/enigmauirc
+kde.org/UserFeedback.org.kde.dolphin.conf
+keepassxc/keepassxc.ini
+midnight/logs/screen_hynse-fabric_logfile.log
+midnight/logs/screen_prominence_ii_logfile.log
+nwg-displays/config
+PreMiD/config.json
+pulse/cookie
+session/dolphin_dolphin_dolphin
+simple-update-notifier/electron-builder.json
+swappy/config

@@ -1,0 +1,40 @@
+[colors.primary]
+background = '#262626'
+foreground = '#CECECE'
+
+[colors.cursor]
+text = '#0E1415'
+cursor = '#CECECE'
+
+[colors.normal]
+black = '#242526'
+red = '#F8511B'
+green = '#565747'
+yellow = '#FA771D'
+blue = '#2C70B7'
+magenta = '#F02E4F'
+cyan = '#3CA1A6'
+white = '#ADADAD'
+
+[colors.bright]
+black = '#5FAC6D'
+red = '#F74319'
+green = '#74EC4C'
+yellow = '#FDC325'
+blue = '#3393CA'
+magenta = '#E75E4F'
+cyan = '#4FBCE6'
+white = '#8C735B'
+
+[shell]
+program = "/bin/zsh"
+args = ["-l"]
+
+[window]
+padding = { x = 8, y = 8 }
+decorations = "None"
+opacity = 0.95
+
+[cursor]
+style = { shape = "Underline" ,blinking = "On" }
+unfocused_hollow = false

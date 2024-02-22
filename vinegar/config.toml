@@ -1,0 +1,33 @@
+# See how to configure Vinegar on the documentation website:
+# https://vinegarhq.github.io/Configuration
+
+wineroot = "/opt/wine/lutris-GE-Proton8-26-x86_64"
+
+[global]
+launcher = "gamemoderun"
+#launcher = ""
+dxvk = false
+renderer = "Vulkan"
+[splash]
+enabled = false
+[player]
+#channel = "zavatarteam"
+#renderer = "D3D11"
+#renderer = "OpenGL"
+dxvk = false
+#launcher = "gamescope -h 1080 -w 1440 -W 900 -H 1080 -r 60 -o 15 -f --force-grab-cursor --"
+
+[player.env]
+DXVK_HUD = "0"
+MANGOHUD = "1"
+WLR_NO_HARDWARE_CURSORS="1"
+
+[player.fflags]
+DFIntTaskSchedulerTargetFps = 2000
+FFlagFallbackToSWCursorWhenRecording = true
+
+[studio]
+#channel = "zavatarteam"
+renderer = "D3D11"
+dxvk = true
+

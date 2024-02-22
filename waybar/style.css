@@ -1,0 +1,175 @@
+* {
+    border: none;
+    border-radius: 0px;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    font-size: 12px;
+    min-height: 0px;
+}
+
+window#waybar {
+    background: rgba(0, 23, 59, 0.52);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+tooltip {
+    background: rgba(9, 14, 26, 0.6);
+    color: #fff;
+    border-radius: 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.63);
+}
+
+#workspaces button {
+    box-shadow: none;
+	text-shadow: none;
+    padding: 0px;
+    border-radius: 0px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-left: 2px;
+    padding-right: 2px;
+    color: #cdd6f4;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#workspaces button.active {
+    background: linear-gradient(75deg, rgba(0,0,0,0) 18%, rgba(255,255,255,0.8) 18%, rgba(255,255,255,0.8) 82%, rgba(0,0,0,0) 82%);
+    color: #313244;
+    margin-left: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 2px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#workspaces button:hover {
+    background: linear-gradient(75deg, rgba(0,0,0,0) 18%, rgba(160,192,255,1) 18%, rgba(68,120,190,1) 82%, rgba(0,0,0,0) 82%);
+    color: #313244;
+    padding-left: 2px;
+    padding-right: 2px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#cpu,
+#memory,
+#clock,
+#workspaces,
+#window,
+#network,
+#pulseaudio,
+#custom-power,
+#language,
+#tray {
+    color: #fff;
+    background: rgba(9, 14, 26, 0);
+    opacity: 1;
+    padding: 0px;
+    margin: 3px 0px 3px 0px;
+}
+
+
+/* resource monitor block */
+
+#cpu {
+    border-radius: 0px 0px 0px 0px;
+    margin-left: 0px;
+    padding-left: 8px;
+    padding-right: 0px;
+    color: rgba(92, 192, 255, 1);
+    background: rgba(14, 69, 115, 0.6);
+}
+
+#memory {
+    border-radius: 0px 0px 0px 0px;
+    border-left-width: 0px;
+    padding-left: 2px;
+    padding-right: 0px;
+    margin-right: 0px;
+    color: rgba(143, 94, 255, 1);
+    background: rgba(14, 69, 115, 0.6);
+}
+
+
+/* date time block */
+
+#clock {
+    border-radius: 0px;
+    margin-left: 0px;
+    padding-left: 12px;
+    padding-right: 42px;
+    margin-right: 6px;
+    color: rgba(255, 255, 255, 1);
+    background: #838383;
+}
+
+
+/* workspace window block */
+
+#workspaces {
+    border-radius: 0px 0px 0px 0px;
+    padding-left: 12px;
+}
+
+#window {
+    border-radius: 0px 0px 0px 0px;
+    padding-right: 12px;
+}
+
+
+/* control center block */
+
+#network {
+    border-radius: 0px 0px 0px 0px;
+    margin-left: 6px;
+    padding-left: 12px;
+    padding-right: 4px;
+}
+
+#pulseaudio {
+    padding-left: 4px;
+    padding-right: 4px;
+} 
+
+#pulseaudio.microphone {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+
+/* system tray block */
+
+#tray {
+    border-radius: 0px;
+    margin-left: 0px;
+    padding-left: 4px;
+    padding-right: 12px;
+    margin-right: 6px;
+}
+
+
+/* custom block */
+
+#custom-power {
+    border-radius: 0px 0px 0px 0px;
+    padding-left: 12px;
+    padding-right: 8px;
+    margin-right: 0px;
+    color: rgba(255, 255, 255, 1);
+    background: #707070;
+}
+#custom-media {
+    padding-left: 4px;
+    background: rgba(14, 69, 115, 0.6);
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#language{
+    margin-right: 12px;
+}
+
+
