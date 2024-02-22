@@ -36,3 +36,5 @@ pulse/cookie
 session/dolphin_dolphin_dolphin
 simple-update-notifier/electron-builder.json
 swappy/config
+google-chrome-unstable/*
+btop/btop.conf
