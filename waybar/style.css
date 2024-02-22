@@ -18,7 +18,7 @@ tooltip {
     border-radius: 0px;
     border-width: 1px;
     border-style: solid;
-    border-color: rgba(255, 255, 255, 0.63);
+    border-color: rgba(168, 72, 72, 0.63);
 }
 
 #workspaces button {
@@ -91,7 +91,7 @@ tooltip {
     padding-right: 0px;
     margin-right: 0px;
     color: rgba(143, 94, 255, 1);
-    background: rgba(14, 69, 115, 0.6);
+    background: rgba(250, 18, 18, 0.6);
 }
 
 
@@ -160,12 +160,12 @@ tooltip {
     padding-right: 8px;
     margin-right: 0px;
     color: rgba(255, 255, 255, 1);
-    background: #707070;
+    background: #009c46;
 }
 #custom-media {
     padding-left: 4px;
-    background: rgba(14, 69, 115, 0.6);
-    color: rgba(255, 255, 255, 0.6);
+    background: rgba(115, 14, 14, 0.6);
+    color: rgba(255, 214, 124, 0.6);
 }
 
 #language{
