@@ -41,3 +41,4 @@ btop/btop.conf
 kritarc
 kritadisplayrc
 btop/btop.conf
+*.lock
