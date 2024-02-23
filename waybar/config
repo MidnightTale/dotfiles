@@ -3,13 +3,14 @@
     "position": "top",
 	"output": "DVI-D-1",
     "mod": "dock",
+    "name": "main",
     "height": 28,
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
-    "modules-left": ["hyprland/workspaces","custom/media"],
+    "modules-left": ["custom/workspacedummy","hyprland/workspaces","custom/media"],
     "modules-center": ["clock","hyprland/window","cpu","memory"],
-    "modules-right": ["pulseaudio","pulseaudio#microphone","tray","hyprland/language","custom/power"],
+    "modules-right": ["custom/pulseaudiodummy","pulseaudio","pulseaudio#microphone","tray","hyprland/language","custom/power"],
     "include": [
 		"~/.config/waybar/rewrite-icon.json",
 	],
@@ -62,7 +63,7 @@
     "memory": {
         "interval": 30,
         "format-alt": "({percentage}%)",
-        "format": "({used}GB)",
+        "format": " - {used}GB",
         "states": {
             "warning": 50,
             "critical": 70
@@ -104,9 +105,9 @@
         "format": "{icon}",
         "format-muted": "󰖁",
         "on-click": "pavucontrol -t 3",
-        "on-click-middle": "~/.config/hypr/scripts/volumecontrol.sh m",
-        "on-scroll-up": "~/.config/hypr/scripts/volumecontrol.sh i",
-        "on-scroll-down": "~/.config/hypr/scripts/volumecontrol.sh d",
+        "on-click-middle": "$HOME/.config/hypr/scripts/volumecontrol.sh -o m",
+        "on-scroll-up": "$HOME/.config/hypr/scripts/volumecontrol.sh -o i",
+        "on-scroll-down": "$HOME/.config/hypr/scripts/volumecontrol.sh -o d",
         "tooltip-format": "{icon} {desc} // {volume}%",
         "scroll-step": 5,
         "states": {
@@ -128,9 +129,9 @@
         "format-source": "",
         "format-source-muted": "",
         "on-click": "pavucontrol -t 4",
-        "on-click-middle": "pamixer --default-source -t",
-        "on-scroll-up": "pamixer --default-source -i 5",
-        "on-scroll-down": "pamixer --default-source -d 5",
+        "on-click-middle": "~/.config/hypr/scripts/volumecontrol.sh -i m",
+        "on-scroll-up": "~/.config/hypr/scripts/volumecontrol.sh -i i",
+        "on-scroll-down": "~/.config/hypr/scripts/volumecontrol.sh -i d",
         "tooltip-format": "{format_source} {source_desc} // {source_volume}%",
         "scroll-step": 5,
         "states": {
@@ -158,12 +159,21 @@
         "on-click": "tofi-drun | xargs hyprctl dispatch exec --",
         "tooltip": false
     },
+    "custom/workspacedummy": {
+        "format": " ",
+        "tooltip": false
+    },
+    "custom/pulseaudiodummy": {
+        "format": " ",
+        "tooltip": false
+    }
 },
 {
     "layer": "top",
     "position": "top",
 	"output": "HDMI-A-1",
     "mod": "dock",
+    "name": "main",
     "height": 16,
     "exclusive": true,
     "passthrough": false,
@@ -171,6 +181,30 @@
     "modules-center": ["hyprland/window"],
     "include": [
 		"~/.config/waybar/rewrite-icon.json",
-	],
+	]
     }
+    // {   
+    // "layer": "top",
+    // "position": "top",
+	// "output": "DVI-D-1",
+    // "mod": "overlay",
+    // "name": "roundconner",
+    // "height": 24,
+    // "exclusive": false,
+    // "passthrough": true,
+    // "gtk-layer-shell": true,
+    // "modules-left": ["custom/roundconnerleft"],
+    // "modules-right": ["custom/roundconnerright"],
+    // "custom/roundconnerleft": {
+    //     "format": "       ",
+    //     "on-click": "",
+    //     "tooltip": false
+    // },
+    
+    // "custom/roundconnerright": {
+    //     "format": "       ",
+    //     "on-click": "",
+    //     "tooltip": false
+    // },
+    // }
 ]

@@ -6,8 +6,23 @@
     color: #d4d9eb;
 }
 
-window#waybar {
-    background: #181818;
+window#waybar.main {
+    /* background: #181818; */
+    background: transparent;
+}
+#workspaces,
+#custom-media,
+#window,
+#clock,
+#cpu,
+#memory,
+#pulseaudio,
+#tray,
+#language,
+#custom-workspacedummy,
+#custom-pulseaudiodummy,
+#custom-power {
+    margin-top: 5px;
 }
 #workspaces button {
     box-shadow: none;
@@ -29,22 +44,42 @@ window#waybar {
     border-bottom: #659bff 1px solid;
     padding: 0px 2px 0px 2px;
 }
-
+#custom-workspacedummy {
+    margin-left: 7px;
+    padding-left: 1px;
+    padding-right: 1px;
+    background: #0e0e0e;
+    border-radius: 6px 0px 0px 6px;
+}
+#custom-pulseaudiodummy {
+    padding-left: 6px;
+    padding-right: 1px;
+    background: #0e0e0e;
+    border-radius: 6px 0px 0px 6px;
+}
 #custom-media {
     padding-left: 8px;
-    background: transparent;
+    padding-right: 12px;
+    border-radius: 0px 6px 6px 0px;
+    background: #181818;
     color: #92a9c4;
 }
 #window {
     color: #d4d9eb;
     padding: 0px 16px 0px 16px;
+    background: #181818;
     transition: all 0.3s cubic-bezier(0.68,-0.55,0.27,1.55);
 }
 #clock {
     color: #92a9c4;
+    background: #181818;
+    padding-left: 12px;
+    border-radius: 6px 0px 0px 6px;
 }
 #cpu {
     color: #92a9c4;
+    background: #181818;
+
     transition: all 0.3s cubic-bezier(0.68,-0.55,0.27,1.55);
 }
 #cpu.warning {
@@ -56,6 +91,9 @@ window#waybar {
 #memory {
     color: #92a9c4;
     padding-left: 2px;
+    padding-right: 12px;
+    background: #181818;
+    border-radius: 0px 6px 6px 0px;
 }
 #memory.warning {
     color: #c1c492;
@@ -70,6 +108,7 @@ tooltip {
 }
 #pulseaudio {
     color: #d4d9eb;
+    background: #181818;
     padding: 0px 4px 0px 2px;
 }
 #pulseaudio.microphone {
@@ -77,18 +116,31 @@ tooltip {
     padding: 0px 2px 0px 4px;
 }
 #tray {
+    background: #181818;
     padding: 0px 16px 0px 16px;
 }
 #language {
+    background: #181818;
     padding: 0px 0px 0px 0px;
 }
 #custom-power {
+    background: #181818;
     color: #d15b5b;
+    margin-right: 7px;
     padding: 0px 8px 0px 12px;
+    border-radius: 0px 6px 6px 0px;
 }
-#custom-app {
-    color: #d4d9eb;
-    padding: 0px 8px 0px 12px;
+#custom-roundconnerleft {
+    color: transparent;
+    background: url("./assets/conner_left.png");
+}
+#custom-roundconnerright {
+    color: transparent;
+    background: url("./assets/conner_right.png");
+}
+window#waybar.roundconner {
+    background: transparent;
+    color: transparent;
 }
 /* #pulseaudio.warning {
     color: #c6cadb;

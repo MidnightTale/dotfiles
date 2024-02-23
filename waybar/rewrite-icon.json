@@ -13,7 +13,8 @@
         "(.*)Visual Studio Code": "Code 󰨞",
         "(.*) — Dolphin": "󰉋 $1",
         "(.*)Spotify": "󰓇 Spotify",
-        "(.*)Steam": "󰓓 Steam"
+        "(.*)Steam": "󰓓 Steam",
+        "Minecraft\\* (.*)": "󰉋 $1"
       }
     }
 }
