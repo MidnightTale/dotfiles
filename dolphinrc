@@ -4,6 +4,9 @@ update_info=dolphin_detailsmodesettings.upd:rename-leading-padding,dolphin_detai
 [CompactMode]
 PreviewSize=16
 
+[DetailsMode]
+PreviewSize=16
+
 [General]
 Version=202
 ViewPropsTimestamp=2024,2,18,0,1,37.276

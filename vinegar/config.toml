@@ -4,31 +4,35 @@
 wineroot = "/opt/wine/lutris-GE-Proton8-26-x86_64"
 
 [global]
-launcher = "gamemoderun"
+#launcher = "gamemoderun"
 #launcher = ""
-dxvk = false
-renderer = "Vulkan"
+#dxvk = false
+#renderer = "Vulkan"
 [splash]
 enabled = false
 [player]
 #channel = "zwinplayer64"
 #renderer = "D3D11"
-#renderer = "OpenGL"
-#dxvk = false
-forced_version = "version-88cfc23f4e7d4e4b"
+renderer = "Vulkan"
+dxvk = false
+#forced_version = "version-88cfc23f4e7d4e4b"
 #launcher = "gamescope -h 1080 -w 1440 -W 900 -H 1080 -r 60 -o 15 -f --force-grab-cursor --"
 
 [player.env]
 #DXVK_HUD = "0"
-MANGOHUD = "1"
-WLR_NO_HARDWARE_CURSORS="1"
+#MANGOHUD = "1"
+#WINEARCH = "win64"
+#WLR_NO_HARDWARE_CURSORS="1"
 
 [player.fflags]
-DFIntTaskSchedulerTargetFps = 60
-FFlagFallbackToSWCursorWhenRecording = true
+DIntSomething = true
+#DFIntTaskSchedulerTargetFps = 60
+#FFlagFallbackToSWCursorWhenRecording = true
 
 [studio]
 #channel = "zavatarteam"
-renderer = "D3D11"
-dxvk = true
+#renderer = "Valkan"
+#renderer = "D3D11"
+#renderer = "OpenGL"
+#dxvk = true
 
