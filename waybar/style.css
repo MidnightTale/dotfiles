@@ -7,10 +7,10 @@
 }
 
 window#waybar.main {
-    /* background: #181818; */
-    background: transparent;
+    background: #3b3b3b;
+    /* background: transparent; */
 }
-#workspaces,
+/* #workspaces,
 #custom-media,
 #window,
 #clock,
@@ -22,64 +22,104 @@ window#waybar.main {
 #custom-workspacedummy,
 #custom-pulseaudiodummy,
 #custom-power {
-    margin-top: 5px;
-}
+    margin-top: 0px;
+} */
 #workspaces button {
     box-shadow: none;
 	text-shadow: none;
     padding: 0px 1px 0px 1px;
     color: #d4d9eb;
-    background: #0e0e0e;
+    background: #040722;
     border-bottom: transparent 1px solid;
     transition: all 0.3s cubic-bezier(0.68,-0.55,0.27,1.55);
 }
 #workspaces button:hover {
     color: #b8ccda;
-    background-color: #181818;
+    background-color: #0f122e;
     border-bottom: #d4d9eb 1px solid;
 }
 #workspaces button.active {
     color: #659bff;
-    background: #181818;
+    background: #0b1044;
     border-bottom: #659bff 1px solid;
     padding: 0px 2px 0px 2px;
 }
 #custom-workspacedummy {
-    margin-left: 7px;
-    padding-left: 1px;
-    padding-right: 1px;
-    background: #0e0e0e;
-    border-radius: 6px 0px 0px 6px;
+    background: linear-gradient(235deg, #508b2d 0%, #508b2d 50%, rgba(0,0,0,1) 50%); 
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+#custom-mediadummy {
+    background: linear-gradient(235deg, rgba(0,0,0,0) 0%, rgba(0,2,23,0) 50%, #508b2d 50%); 
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 #custom-pulseaudiodummy {
     padding-left: 6px;
     padding-right: 1px;
-    background: #0e0e0e;
+    /* background: #0e0e0e; */
     border-radius: 6px 0px 0px 6px;
 }
+#custom-clockdummy {
+    background: linear-gradient(235deg, #8b572d 0%, #8b572d 50%, rgba(0, 0, 0, 0) 50%); 
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+#custom-windowldummy {
+    background: linear-gradient(235deg, #f8f8f8 0%, #f8f8f8 50%, #8b572d 50%); 
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+#custom-windowrdummy {
+    background: linear-gradient(125deg, #f8f8f8 0%, #f8f8f8 50%, #2e98b3 50%); 
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+#custom-memorydummy {
+    background: linear-gradient(125deg, #2e98b3 0%, #2e98b3 50%, rgba(0, 0, 0, 0) 50%); 
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+#custom-micdummy {
+    background: linear-gradient(125deg, rgba(46, 152, 179, 0) 0%, rgba(46, 152, 179, 0) 50%, #9c3434 50%); 
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+#custom-traydummy {
+    background: linear-gradient(125deg, #9c3434 0%, #9c3434 50%, #a4c03e 50%); 
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+#custom-langdummy {
+    background: linear-gradient(125deg, #a4c03e 0%, #a4c03e 50%, #ae4abb 50%); 
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+
 #custom-media {
-    padding-left: 8px;
-    padding-right: 12px;
-    border-radius: 0px 6px 6px 0px;
-    background: #181818;
-    color: #92a9c4;
+    /* border-radius: 0px 6px 6px 0px; */
+    padding: 0px 8px 0px 4px;
+    background: #508b2d;
+    color: #e6e6e6;
 }
 #window {
-    color: #d4d9eb;
+    color: #6d6d6d;
+    font-weight: bold;
     padding: 0px 16px 0px 16px;
-    background: #181818;
+    background: #f8f8f8;
     transition: all 0.3s cubic-bezier(0.68,-0.55,0.27,1.55);
 }
 #clock {
-    color: #92a9c4;
-    background: #181818;
-    padding-left: 12px;
-    border-radius: 6px 0px 0px 6px;
+    color: #ebebeb;
+    background: #8b572d;
+    padding: 0px 4px 0px 8px;
+    /* border-radius: 6px 0px 0px 6px; */
 }
 #cpu {
-    color: #92a9c4;
-    background: #181818;
-
+    color: #d8d8d8;
+    background: #2e98b3;
+    padding: 0px 0px 0px 4px;
     transition: all 0.3s cubic-bezier(0.68,-0.55,0.27,1.55);
 }
 #cpu.warning {
@@ -89,11 +129,9 @@ window#waybar.main {
     color: #d47878;
 }
 #memory {
-    color: #92a9c4;
-    padding-left: 2px;
-    padding-right: 12px;
-    background: #181818;
-    border-radius: 0px 6px 6px 0px;
+    color: #d8d8d8;
+    padding: 0px 8px 0px 0px;
+    background: #2e98b3;
 }
 #memory.warning {
     color: #c1c492;
@@ -108,23 +146,24 @@ tooltip {
 }
 #pulseaudio {
     color: #d4d9eb;
-    background: #181818;
-    padding: 0px 4px 0px 2px;
+    background: #9c3434;
+    padding: 0px 4px 0px 4px;
 }
 #pulseaudio.microphone {
     color: #d4d9eb;
     padding: 0px 2px 0px 4px;
 }
 #tray {
-    background: #181818;
-    padding: 0px 16px 0px 16px;
+    background: #a4c03e;
+    padding: 0px 8px 0px 4px;
 }
 #language {
-    background: #181818;
-    padding: 0px 0px 0px 0px;
+    color: #fff;
+    background: #ae4abb;
+    padding: 0px 8px 0px 4px;
 }
 #custom-power {
-    background: #181818;
+    /* background: #181818; */
     color: #d15b5b;
     margin-right: 7px;
     padding: 0px 8px 0px 12px;

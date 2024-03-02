@@ -4,13 +4,13 @@
 	"output": "DVI-D-1",
     "mod": "dock",
     "name": "main",
-    "height": 28,
+    "height": 24,
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
-    "modules-left": ["custom/workspacedummy","hyprland/workspaces","custom/media"],
-    "modules-center": ["clock","hyprland/window","cpu","memory"],
-    "modules-right": ["custom/pulseaudiodummy","pulseaudio","pulseaudio#microphone","tray","hyprland/language","custom/power"],
+    "modules-left": ["hyprland/workspaces","custom/workspacedummy","custom/media","custom/mediadummy"],
+    "modules-center": ["custom/clockdummy","clock","custom/windowldummy","hyprland/window","custom/windowrdummy","cpu","memory","custom/memorydummy"],
+    "modules-right": ["custom/micdummy","pulseaudio","pulseaudio#microphone","custom/traydummy","tray","custom/langdummy","hyprland/language"],
     "include": [
 		"~/.config/waybar/rewrite-icon.json",
 	],
@@ -149,22 +149,54 @@
           "format-en": "US",
           "format-th": "TH"
     },
-    "custom/power": {
-        "format": "{}",
-        "on-click": "$HOME/.config/hypr/scripts/shutdown.sh",
-        "tooltip": false
-    },
+    // "custom/power": {
+    //     "format": "{}",
+    //     "on-click": "$HOME/.config/hypr/scripts/shutdown.sh",
+    //     "tooltip": false
+    // },
     "custom/app": {
         "format": "󰘷 App",
         "on-click": "tofi-drun | xargs hyprctl dispatch exec --",
         "tooltip": false
     },
     "custom/workspacedummy": {
-        "format": " ",
+        "format": "     ",
+        "tooltip": false
+    },
+    "custom/mediadummy": {
+        "format": "     ",
         "tooltip": false
     },
     "custom/pulseaudiodummy": {
         "format": " ",
+        "tooltip": false
+    },
+    "custom/clockdummy": {
+        "format": "     ",
+        "tooltip": false
+    },
+    "custom/windowldummy": {
+        "format": "     ",
+        "tooltip": false
+    },
+    "custom/windowrdummy": {
+        "format": "     ",
+        "tooltip": false
+    },
+    "custom/memorydummy": {
+        "format": "     ",
+        "tooltip": false
+    },
+    "custom/micdummy": {
+        "format": "     ",
+        "tooltip": false
+    },
+    "custom/traydummy": {
+        "format": "     ",
+        "tooltip": false
+    },
+    "custom/langdummy": {
+        "format": "     ",
         "tooltip": false
     }
 },
@@ -174,7 +206,7 @@
 	"output": "HDMI-A-1",
     "mod": "dock",
     "name": "main",
-    "height": 16,
+    "height": 24,
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,

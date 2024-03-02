@@ -14,7 +14,7 @@
         "(.*) — Dolphin": "󰉋 $1",
         "(.*)Spotify": "󰓇 Spotify",
         "(.*)Steam": "󰓓 Steam",
-        "Minecraft\\* (.*)": "󰉋 $1"
+        "Minecraft\\* (.*)": "󰉋 $1",
       }
     }
 }
