@@ -1,13 +1,21 @@
+@define-color mediacolor #3f4361;
+@define-color clockcolor #3f4361;
+@define-color windowcolor #363A59;
+@define-color systemcolor #3f4361;
+@define-color audiocolor #3f4361;
+@define-color traycolor #363A59;
+@define-color langcolor #3f4361;
+@define-color font1color #ECD200;
+
 * {
     border: none;
     border-radius: 0px;
     font-size: 12px;
     min-height: 0px;
-    color: #d4d9eb;
 }
 
 window#waybar.main {
-    background: #3b3b3b;
+    background: #31344b;
     /* background: transparent; */
 }
 /* #workspaces,
@@ -28,8 +36,8 @@ window#waybar.main {
     box-shadow: none;
 	text-shadow: none;
     padding: 0px 1px 0px 1px;
-    color: #d4d9eb;
-    background: #040722;
+    color: #7c7c7c;
+    background: #363A59;
     border-bottom: transparent 1px solid;
     transition: all 0.3s cubic-bezier(0.68,-0.55,0.27,1.55);
 }
@@ -39,18 +47,17 @@ window#waybar.main {
     border-bottom: #d4d9eb 1px solid;
 }
 #workspaces button.active {
-    color: #659bff;
-    background: #0b1044;
-    border-bottom: #659bff 1px solid;
-    padding: 0px 2px 0px 2px;
+    color: #ECD200;
+    background: #31344b;
+    border-bottom: #ECD200 1px solid;
 }
 #custom-workspacedummy {
-    background: linear-gradient(235deg, #508b2d 0%, #508b2d 50%, rgba(0,0,0,1) 50%); 
+    background: linear-gradient(235deg, @mediacolor 0%, @mediacolor 50%, #363A59 50%); 
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
 }
 #custom-mediadummy {
-    background: linear-gradient(235deg, rgba(0,0,0,0) 0%, rgba(0,2,23,0) 50%, #508b2d 50%); 
+    background: linear-gradient(235deg, rgba(0,0,0,0) 0%, rgba(0,2,23,0) 50%, @mediacolor 50%); 
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
 }
@@ -61,37 +68,37 @@ window#waybar.main {
     border-radius: 6px 0px 0px 6px;
 }
 #custom-clockdummy {
-    background: linear-gradient(235deg, #8b572d 0%, #8b572d 50%, rgba(0, 0, 0, 0) 50%); 
+    background: linear-gradient(235deg, @clockcolor 0%, @clockcolor 50%, rgba(0, 0, 0, 0) 50%); 
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
 }
 #custom-windowldummy {
-    background: linear-gradient(235deg, #f8f8f8 0%, #f8f8f8 50%, #8b572d 50%); 
+    background: linear-gradient(235deg, @windowcolor 0%, @windowcolor 50%, @clockcolor 50%); 
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
 }
 #custom-windowrdummy {
-    background: linear-gradient(125deg, #f8f8f8 0%, #f8f8f8 50%, #2e98b3 50%); 
+    background: linear-gradient(125deg, @windowcolor 0%, @windowcolor 50%, @systemcolor 50%); 
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
 }
 #custom-memorydummy {
-    background: linear-gradient(125deg, #2e98b3 0%, #2e98b3 50%, rgba(0, 0, 0, 0) 50%); 
+    background: linear-gradient(125deg, @systemcolor 0%, @systemcolor 50%, rgba(0, 0, 0, 0) 50%); 
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
 }
 #custom-micdummy {
-    background: linear-gradient(125deg, rgba(46, 152, 179, 0) 0%, rgba(46, 152, 179, 0) 50%, #9c3434 50%); 
+    background: linear-gradient(125deg, rgba(46, 152, 179, 0) 0%, rgba(46, 152, 179, 0) 50%, @audiocolor 50%); 
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
 }
 #custom-traydummy {
-    background: linear-gradient(125deg, #9c3434 0%, #9c3434 50%, #a4c03e 50%); 
+    background: linear-gradient(125deg, @audiocolor 0%, @audiocolor 50%, @traycolor 50%); 
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
 }
 #custom-langdummy {
-    background: linear-gradient(125deg, #a4c03e 0%, #a4c03e 50%, #ae4abb 50%); 
+    background: linear-gradient(125deg, @traycolor 0%, @traycolor 50%, @langcolor 50%); 
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
 }
@@ -100,25 +107,25 @@ window#waybar.main {
 #custom-media {
     /* border-radius: 0px 6px 6px 0px; */
     padding: 0px 8px 0px 4px;
-    background: #508b2d;
-    color: #e6e6e6;
+    background: @mediacolor;
+    color: @font1color;
 }
 #window {
-    color: #6d6d6d;
+    color: @font1color;
     font-weight: bold;
     padding: 0px 16px 0px 16px;
-    background: #f8f8f8;
+    background: @windowcolor;
     transition: all 0.3s cubic-bezier(0.68,-0.55,0.27,1.55);
 }
 #clock {
-    color: #ebebeb;
-    background: #8b572d;
+    color: @font1color;
+    background: @clockcolor;
     padding: 0px 4px 0px 8px;
     /* border-radius: 6px 0px 0px 6px; */
 }
 #cpu {
-    color: #d8d8d8;
-    background: #2e98b3;
+    color: @font1color;
+    background: @systemcolor;
     padding: 0px 0px 0px 4px;
     transition: all 0.3s cubic-bezier(0.68,-0.55,0.27,1.55);
 }
@@ -129,9 +136,9 @@ window#waybar.main {
     color: #d47878;
 }
 #memory {
-    color: #d8d8d8;
+    color: @font1color;
     padding: 0px 8px 0px 0px;
-    background: #2e98b3;
+    background: @systemcolor;
 }
 #memory.warning {
     color: #c1c492;
@@ -145,21 +152,21 @@ tooltip {
     transition: all 0.3s cubic-bezier(0.68,-0.55,0.27,1.55);
 }
 #pulseaudio {
-    color: #d4d9eb;
-    background: #9c3434;
+    color: @font1color;
+    background: @audiocolor;
     padding: 0px 4px 0px 4px;
 }
 #pulseaudio.microphone {
-    color: #d4d9eb;
+    color: @font1color;
     padding: 0px 2px 0px 4px;
 }
 #tray {
-    background: #a4c03e;
+    background: @traycolor;
     padding: 0px 8px 0px 4px;
 }
 #language {
-    color: #fff;
-    background: #ae4abb;
+    color: @font1color;
+    background: @langcolor;
     padding: 0px 8px 0px 4px;
 }
 #custom-power {
