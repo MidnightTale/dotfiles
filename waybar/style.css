@@ -1,25 +1,15 @@
-@define-color mediacolor #3f4361;
-@define-color clockcolor #3f4361;
-@define-color windowcolor #363A59;
-@define-color systemcolor #3f4361;
-@define-color audiocolor #3f4361;
-@define-color traycolor #363A59;
-@define-color langcolor #3f4361;
-@define-color font1color #ECD200;
-
 * {
     border: none;
     border-radius: 0px;
     font-size: 12px;
     min-height: 0px;
 }
-
-window#waybar.main {
-    background: #31344b;
-    border-bottom: #ECD200 1px solid;
-    /* background: transparent; */
+window#waybar {
+	background: rgba(15, 15, 15, 0.5);
+	/* border-radius: 0px 0px 20px 20px; */
+	border-radius: 0px 0px 0px 0px;
+	border-top: 1px solid rgb(80,80,80);
 }
-/* #workspaces,
 #custom-media,
 #window,
 #clock,
@@ -27,197 +17,76 @@ window#waybar.main {
 #memory,
 #pulseaudio,
 #tray,
+#taskbar,
 #language,
-#custom-workspacedummy,
-#custom-pulseaudiodummy,
 #custom-power {
-    margin-top: 0px;
-} */
-#workspaces button {
-    box-shadow: none;
-	text-shadow: none;
-    padding: 0px 1px 0px 1px;
-    color: #7c7c7c;
-    background: #363A59;
-    border-bottom: transparent 1px solid;
-    transition: all 0.3s cubic-bezier(0.68,-0.55,0.27,1.55);
-}
-#workspaces button:hover {
-    color: #b8ccda;
-    background-color: #0f122e;
-    border-bottom: #d4d9eb 1px solid;
-}
-#workspaces button.active {
-    color: #ECD200;
-    background: #31344b;
-    border-bottom: #ECD200 1px solid;
-}
-#custom-workspacedummy {
-    background: linear-gradient(235deg, @mediacolor 0%, @mediacolor 50%, #363A59 50%); 
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-}
-#custom-mediadummy {
-    background: linear-gradient(235deg, rgba(0,0,0,0) 0%, rgba(0,2,23,0) 50%, @mediacolor 50%); 
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    border-bottom: #ECD200 1px solid;
-}
-#custom-pulseaudiodummy {
-    padding-left: 6px;
-    padding-right: 1px;
-    /* background: #0e0e0e; */
-    border-radius: 6px 0px 0px 6px;
-    border-bottom: #ECD200 1px solid;
-}
-#custom-clockdummy {
-    background: linear-gradient(235deg, @clockcolor 0%, @clockcolor 50%, rgba(0, 0, 0, 0) 50%); 
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    border-bottom: #ECD200 1px solid;
-}
-#custom-windowldummy {
-    background: linear-gradient(235deg, @windowcolor 0%, @windowcolor 50%, @clockcolor 50%); 
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    border-bottom: #ECD200 1px solid;
-}
-#custom-windowrdummy {
-    background: linear-gradient(125deg, @windowcolor 0%, @windowcolor 50%, @systemcolor 50%); 
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    border-bottom: #ECD200 1px solid;
-}
-#custom-memorydummy {
-    background: linear-gradient(125deg, @systemcolor 0%, @systemcolor 50%, rgba(0, 0, 0, 0) 50%); 
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    border-bottom: #ECD200 1px solid;
-}
-#custom-micdummy {
-    background: linear-gradient(125deg, rgba(46, 152, 179, 0) 0%, rgba(46, 152, 179, 0) 50%, @audiocolor 50%); 
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    border-bottom: #ECD200 1px solid;
-}
-#custom-traydummy {
-    background: linear-gradient(125deg, @audiocolor 0%, @audiocolor 50%, @traycolor 50%); 
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    border-bottom: #ECD200 1px solid;
-}
-#custom-langdummy {
-    background: linear-gradient(125deg, @traycolor 0%, @traycolor 50%, @langcolor 50%); 
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    border-bottom: #ECD200 1px solid;
-}
-
-
-#custom-media {
-    /* border-radius: 0px 6px 6px 0px; */
-    padding: 0px 8px 0px 4px;
-    background: @mediacolor;
-    color: @font1color;
-    border-bottom: #ECD200 1px solid;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 #window {
-    color: @font1color;
-    font-weight: bold;
-    padding: 0px 16px 0px 16px;
-    background: @windowcolor;
-    transition: all 0.3s cubic-bezier(0.68,-0.55,0.27,1.55);
-    border-bottom: #ECD200 1px solid;
+    color: #fff;
 }
-#clock {
-    color: @font1color;
-    background: @clockcolor;
-    padding: 0px 4px 0px 8px;
-    /* border-radius: 6px 0px 0px 6px; */
-    border-bottom: #ECD200 1px solid;
+
+#taskbar {
+    margin-left: 8px;
+    margin-right: 4px;
+    padding: 0px 1px 0px 1px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
-#cpu {
-    color: @font1color;
-    background: @systemcolor;
-    padding: 0px 0px 0px 4px;
-    transition: all 0.3s cubic-bezier(0.68,-0.55,0.27,1.55);
-    border-bottom: #ECD200 1px solid;
+#taskbar button {
+    background: transparent;
+    border-radius: 8px;
+    padding: 4px 4px 4px 4px;
+    margin: 0px 2px 0px 2px;
+    transition: all 0.5s cubic-bezier(0.68,-0.55,0.27,1.55);
 }
-#cpu.warning {
-    color: #c1c492;
-}
-#cpu.critical {
-    color: #d47878;
-}
-#memory {
-    color: @font1color;
-    padding: 0px 8px 0px 0px;
-    background: @systemcolor;
-    border-bottom: #ECD200 1px solid;
-}
-#memory.warning {
-    color: #c1c492;
-}
-#memory.critical {
-    color: #d47878;
+#taskbar button.active {
+    background: rgba(255, 255, 255, 0.7);
 }
 tooltip {
-    background: #181818;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2px 2px 2px 2px;
     border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     transition: all 0.3s cubic-bezier(0.68,-0.55,0.27,1.55);
 }
-#pulseaudio {
-    color: @font1color;
-    background: @audiocolor;
-    padding: 0px 4px 0px 4px;
-    border-bottom: #ECD200 1px solid;
+#custom-media {
+    color: #e0e0e0;
+    margin-left: 8px;
+    padding: 0px 6px 0px 6px;
+    border-radius: 8px;
+    background: rgba(28, 131, 24, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
-#pulseaudio.microphone {
-    color: @font1color;
-    padding: 0px 2px 0px 4px;
+#clock {
+    color: #e0e0e0;
+    font-weight: bold;
 }
 #tray {
-    background: @traycolor;
-    padding: 0px 8px 0px 4px;
-    border-bottom: #ECD200 1px solid;
+    margin-right: 8px;
 }
-#language {
-    color: @font1color;
-    background: @langcolor;
-    padding: 0px 8px 0px 4px;
-    border-bottom: #ECD200 1px solid;
+#pulseaudio {
+    color: #91fd76;
+    margin-left: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
-#custom-power {
-    /* background: #181818; */
-    color: #d15b5b;
-    margin-right: 7px;
-    padding: 0px 8px 0px 12px;
-    border-radius: 0px 6px 6px 0px;
+
+#pulseaudio.warning {
+    color: #fdf288;
 }
-#custom-roundconnerleft {
-    color: transparent;
-    background: url("./assets/conner_left.png");
-}
-#custom-roundconnerright {
-    color: transparent;
-    background: url("./assets/conner_right.png");
-}
-window#waybar.roundconner {
-    background: transparent;
-    color: transparent;
-}
-/* #pulseaudio.warning {
-    color: #c6cadb;
-}
+
 #pulseaudio.critical {
-    color: #b4b8c7;
+    color: #ff7a68;
 }
-#pulseaudio microphone {
-    color: #d4d9eb;
+#pulseaudio.microphone {
+    color: #ebebeb;
+    padding-right: 8px;
+    border-radius: 8px;
+    margin-right: 8px;
 }
-#pulseaudio.warning microphone {
-    color: #c6cadb;
-}
-#pulseaudio.critical microphone {
-    color: #b4b8c7;
-} */
