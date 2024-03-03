@@ -13,6 +13,7 @@
     "modules-right": ["custom/micdummy","pulseaudio","pulseaudio#microphone","custom/traydummy","tray","custom/langdummy","hyprland/language"],
     "include": [
 		"~/.config/waybar/rewrite-icon.json",
+		"~/.config/waybar/dummy.json",
 	],
    "hyprland/workspaces": {
        "disable-scroll": true,
@@ -158,46 +159,6 @@
         "format": "󰘷 App",
         "on-click": "tofi-drun | xargs hyprctl dispatch exec --",
         "tooltip": false
-    },
-    "custom/workspacedummy": {
-        "format": "     ",
-        "tooltip": false
-    },
-    "custom/mediadummy": {
-        "format": "     ",
-        "tooltip": false
-    },
-    "custom/pulseaudiodummy": {
-        "format": " ",
-        "tooltip": false
-    },
-    "custom/clockdummy": {
-        "format": "     ",
-        "tooltip": false
-    },
-    "custom/windowldummy": {
-        "format": "     ",
-        "tooltip": false
-    },
-    "custom/windowrdummy": {
-        "format": "     ",
-        "tooltip": false
-    },
-    "custom/memorydummy": {
-        "format": "     ",
-        "tooltip": false
-    },
-    "custom/micdummy": {
-        "format": "     ",
-        "tooltip": false
-    },
-    "custom/traydummy": {
-        "format": "     ",
-        "tooltip": false
-    },
-    "custom/langdummy": {
-        "format": "     ",
-        "tooltip": false
     }
 },
 {
@@ -210,9 +171,10 @@
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
-    "modules-center": ["hyprland/window"],
+    "modules-center": ["custom/clockdummy","custom/windowldummy","hyprland/window","custom/windowrdummy","custom/memorydummy"],
     "include": [
 		"~/.config/waybar/rewrite-icon.json",
+		"~/.config/waybar/dummy.json",
 	]
     }
     // {   

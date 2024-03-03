@@ -16,6 +16,7 @@
 
 window#waybar.main {
     background: #31344b;
+    border-bottom: #ECD200 1px solid;
     /* background: transparent; */
 }
 /* #workspaces,
@@ -60,47 +61,56 @@ window#waybar.main {
     background: linear-gradient(235deg, rgba(0,0,0,0) 0%, rgba(0,2,23,0) 50%, @mediacolor 50%); 
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+    border-bottom: #ECD200 1px solid;
 }
 #custom-pulseaudiodummy {
     padding-left: 6px;
     padding-right: 1px;
     /* background: #0e0e0e; */
     border-radius: 6px 0px 0px 6px;
+    border-bottom: #ECD200 1px solid;
 }
 #custom-clockdummy {
     background: linear-gradient(235deg, @clockcolor 0%, @clockcolor 50%, rgba(0, 0, 0, 0) 50%); 
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+    border-bottom: #ECD200 1px solid;
 }
 #custom-windowldummy {
     background: linear-gradient(235deg, @windowcolor 0%, @windowcolor 50%, @clockcolor 50%); 
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+    border-bottom: #ECD200 1px solid;
 }
 #custom-windowrdummy {
     background: linear-gradient(125deg, @windowcolor 0%, @windowcolor 50%, @systemcolor 50%); 
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+    border-bottom: #ECD200 1px solid;
 }
 #custom-memorydummy {
     background: linear-gradient(125deg, @systemcolor 0%, @systemcolor 50%, rgba(0, 0, 0, 0) 50%); 
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+    border-bottom: #ECD200 1px solid;
 }
 #custom-micdummy {
     background: linear-gradient(125deg, rgba(46, 152, 179, 0) 0%, rgba(46, 152, 179, 0) 50%, @audiocolor 50%); 
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+    border-bottom: #ECD200 1px solid;
 }
 #custom-traydummy {
     background: linear-gradient(125deg, @audiocolor 0%, @audiocolor 50%, @traycolor 50%); 
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+    border-bottom: #ECD200 1px solid;
 }
 #custom-langdummy {
     background: linear-gradient(125deg, @traycolor 0%, @traycolor 50%, @langcolor 50%); 
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+    border-bottom: #ECD200 1px solid;
 }
 
 
@@ -109,6 +119,7 @@ window#waybar.main {
     padding: 0px 8px 0px 4px;
     background: @mediacolor;
     color: @font1color;
+    border-bottom: #ECD200 1px solid;
 }
 #window {
     color: @font1color;
@@ -116,18 +127,21 @@ window#waybar.main {
     padding: 0px 16px 0px 16px;
     background: @windowcolor;
     transition: all 0.3s cubic-bezier(0.68,-0.55,0.27,1.55);
+    border-bottom: #ECD200 1px solid;
 }
 #clock {
     color: @font1color;
     background: @clockcolor;
     padding: 0px 4px 0px 8px;
     /* border-radius: 6px 0px 0px 6px; */
+    border-bottom: #ECD200 1px solid;
 }
 #cpu {
     color: @font1color;
     background: @systemcolor;
     padding: 0px 0px 0px 4px;
     transition: all 0.3s cubic-bezier(0.68,-0.55,0.27,1.55);
+    border-bottom: #ECD200 1px solid;
 }
 #cpu.warning {
     color: #c1c492;
@@ -139,6 +153,7 @@ window#waybar.main {
     color: @font1color;
     padding: 0px 8px 0px 0px;
     background: @systemcolor;
+    border-bottom: #ECD200 1px solid;
 }
 #memory.warning {
     color: #c1c492;
@@ -155,6 +170,7 @@ tooltip {
     color: @font1color;
     background: @audiocolor;
     padding: 0px 4px 0px 4px;
+    border-bottom: #ECD200 1px solid;
 }
 #pulseaudio.microphone {
     color: @font1color;
@@ -163,11 +179,13 @@ tooltip {
 #tray {
     background: @traycolor;
     padding: 0px 8px 0px 4px;
+    border-bottom: #ECD200 1px solid;
 }
 #language {
     color: @font1color;
     background: @langcolor;
     padding: 0px 8px 0px 4px;
+    border-bottom: #ECD200 1px solid;
 }
 #custom-power {
     /* background: #181818; */
