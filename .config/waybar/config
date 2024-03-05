@@ -1,0 +1,112 @@
+[
+    {   
+        "layer": "top",
+        "position": "top",
+        "output": "DVI-D-1",
+        "mod": "dock",
+        "name": "main",
+        "height": 24,
+        "exclusive": true,
+        "passthrough": false,
+        "gtk-layer-shell": true,
+        "modules-left": ["wlr/taskbar","custom/media"],
+        "modules-center": ["clock"],
+        "modules-right": ["tray","pulseaudio","pulseaudio#microphone"],
+        "include": [],
+        "wlr/taskbar": {
+            "format": "{icon}",
+            "icon-size": 16,
+            "tooltip-format": "{title}",
+            "on-click": "activate",
+            "on-click-middle": "close",
+            "ignore-list": [
+               "Alacritty"
+            ],
+            "app_ids-mapping": {
+                "firefoxdeveloperedition": "firefox-developer-edition"
+            },
+            "rewrite": {
+                "Firefox Web Browser": "Firefox",
+                "Foot Server": "Terminal"
+            }
+        
+        },
+        "custom/media": {
+            "format": "{icon} {}",
+            "return-type": "json",
+            "max-length": 40,
+            "on-click": "playerctl next",
+            "on-click-middle": "playerctl play-pause",
+            "on-click-right": "playerctl previous",
+            "format-icons": {
+                "default": "<span color=\"#8CFA75\"> </span>"
+                },
+            "escape": true,
+            "exec": "$HOME/.config/core/scripts/mediaplayer.py 2> /dev/null" // Script in resources folder
+        },
+        "clock": {
+            "tooltip": true,
+            "tooltip-format": "<tt>{calendar}</tt>",
+            "calendar": {
+                "mode":"month",
+                "mode-mon-col": 3,
+                "weeks-pos": "right",
+                "on-scroll": 1,
+                "on-click-right": "mode",
+                "format": {
+                    "months":     "<span color='#f5c2e7'><b>{}</b></span>",
+                    "days":       "<span color='#cdd6f4'><b>{}</b></span>",
+                    "weeks":      "<span color='#74c7ec'><b>W{}</b></span>",
+                    "weekdays":   "<span color='#fab387'><b>{}</b></span>",
+                    "today":      "<span color='#a6e3a1'><b><u>{}</u></b></span>"
+                    
+                }
+            },
+            "format": "{:%I:%M %p}"
+        },
+        "tray": {
+            "icon-size": 16,
+            "spacing": 10
+        },
+        "pulseaudio": {
+            "format": "{icon}  {volume}%",
+            "format-muted": "<span color=\"#FF5151\">󰖁 </span><span color=\"#ff7a68\">Muted</span>",
+            "on-click": "pavucontrol -t 3",
+            "on-click-middle": "$HOME/.config/core/scripts/volumecontrol.sh -o m",
+            "on-scroll-up": "$HOME/.config/core/scripts/volumecontrol.sh -o i",
+            "on-scroll-down": "$HOME/.config/core/scripts/volumecontrol.sh -o d",
+            "tooltip-format": "{icon} Currently at {volume}%\n{desc}",
+            "scroll-step": 5,
+            "states": {
+                "good": 95,
+                "warning": 65,
+                "critical": 30
+            },
+            "format-icons": {
+                "headphone": "",
+                "hands-free": "",
+                "headset": "",
+                "phone": "",
+                "portable": "",
+                "car": "",
+                "default": ["<span color=\"#FF5151\">  </span>", "<span color=\"#fff065\"> </span>", "<span color=\"#57FF2D\"></span>"]
+            }
+        },
+        "pulseaudio#microphone": {
+            "format": "{format_source}",
+            "format-source": "  {volume}%",
+            "format-source-muted": "<span color=\"#FF5151\"> </span><span color=\"#ff7a68\">Muted</span>",
+            "on-click": "pavucontrol -t 4",
+            "on-click-middle": "~/.config/core/scripts/volumecontrol.sh -i m",
+            "on-scroll-up": "~/.config/core/scripts/volumecontrol.sh -i i",
+            "on-scroll-down": "~/.config/core/scripts/volumecontrol.sh -i d",
+            "tooltip-format": "{format_source} {source_desc} // {source_volume}%",
+            "scroll-step": 5,
+            "states": {
+                "good": 95,
+                "warning": 65,
+                "critical": 30
+            }
+        },
+    }
+]

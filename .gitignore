@@ -68,3 +68,16 @@ com.spacedrive.desktop/.window-state
 *.lock
 octopi/distro_rss.xml
 octopi/octopi.conf
+.config/Kvantum/WhiteSur/*
+.config/Kvantum/Fluent/*
+.config/Kvantum/Fluent-dark/*
+.config/Kvantum/Fluent-round/*
+.config/Kvantum/Layan/*
+.config/Kvantum/Layan-solid/*
+.config/Kvantum/Sweet/*
+.config/Kvantum/Sweet-Ambar-Blue/*
+.config/Kvantum/Sweet-Mars-transparent-toolbar/*
+.config/Kvantum/Sweet-Mars/*
+.config/Kvantum/Sweet-transparent-toolbar/*
+.config/mpv/fonts/*
+.config/qt5ct/colors/KvYaru-Blue/*
